@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dies game </title>
+    <style>
+        *{
+            text-align: center;
+        }
+        h1{
+            font-size : 100px;
+            font-family: cursive;
+            margin-top: 150px;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: #232323;
+            color: aliceblue;
+            font-size: larger;
+            text-align: center;
+            text-align: center;
+            vertical-align: middle;
+        }
+        section{
+            width: 70%;
+            margin:100px auto;
+            text-align: center;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+          
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Refresh me !</h1>
+    <section>
+       <div>
+        <h3>player 1 </h3>
+        <div class="first"></div>
+       </div>
+       <div>
+        <h3>player 2 </h3>
+        <div class="second"></div> 
+       </div>
+       
+    </section>
+    <script>
+        let num1 = Math.floor(Math.random()*6) + 1 ;
+        let num2 = Math.floor(Math.random()*6) + 1 ;
+        
+        let dice1 = document.querySelector(".first");
+        dice1=num1;
+        dice1.innerHTML=num1;
+
+        let dice2 = document.querySelector(".second ");
+        dice2=num2;
+        dice2.innerHTML=num2;
+        
+        h1=document.querySelector("h1");
+        if (dice1 > dice2) {
+            h1.innerHTML=" :) player 1 wins ";
+        }else if (dice1 < dice2) {
+            h1.innerHTML="  player 2 wins :) ";
+        }else{
+            h1.innerHTML="Match draw";
+        }
+      
+    </script>
+</body>
+</html>

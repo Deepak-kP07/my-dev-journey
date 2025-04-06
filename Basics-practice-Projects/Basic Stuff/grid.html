@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gride box </title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+            font-size: larger;
+            text-align: center;
+        }
+        /* div{
+            height: 50px;
+            width: 100px;
+        } */
+
+        #container div{
+            width: 150px ;
+            height: 70px;
+           
+        }
+        #container{
+            width: 80%;
+            height: 1100px;
+            background-color: rgb(196, 255, 252);
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px ;
+            /* grid-template-columns: repeat(3); */
+            row-gap: 100px;
+            column-gap: 20px;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            justify-items:end;
+            place-items:inherit;
+            animation: anime 5s ease 0 infiniten normal fill-mode;
+
+
+        }
+        #container :nth-child(1){
+            background-color: aqua;
+            grid-row-start: 2;
+           
+            
+        }
+        #container :nth-child(2){
+            background-color: rgb(38, 255, 0);
+            /* flex-shrink: 3 ; */
+
+            
+        }
+        #container :nth-child(3){
+            background-color: rgb(17, 0, 255);
+            /* flex-shrink: 1; */
+            grid-row: 2 / span 4;
+        }
+        #container :nth-child(4){
+            background-color: rgb(255, 0, 140);
+            /* flex-grow:1; */
+        }
+        #container :nth-child(5){
+            background-color: rgb(255, 0, 0);
+            justify-self: right;
+            align-self:center;
+            
+        }
+        #container :nth-child(6){
+            background-color: rgb(255, 191, 0);
+            
+        }
+        #container :nth-child(7){
+            background-color: rgb(255, 242, 0);
+            
+        }
+        #container :nth-child(8){
+            background-color: rgb(131, 81, 115);
+            
+        }
+        @media screen and (max-width : 400px) {
+            #container div {
+                width: 90%;
+                height: 70px;
+                margin: auto;
+                margin-top: 10px;
+                animation: anime 5s ease 0 infiniten normal fill-mode;
+            }
+            #container {
+                display:flex;
+                flex-wrap: wrap;
+
+            }
+        }
+
+        @keyframes anime {
+            0%{
+                opacity: 0.8;
+            }
+            25% {
+                opacity: 0.6;
+            }
+            50%{
+                opacity: 0.4;
+            }
+            75%{
+                opacity: 0.2;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1> GrideBox </h1>
+        <div id="container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </body>
+</body>
+</html>

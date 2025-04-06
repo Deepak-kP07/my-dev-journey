@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fizzbuzz</title>
+</head>
+<body>
+    <h1>fizzbuzz</h1>
+    <script>
+        let output = [];
+        for (let i = 1 ; i<=100 ; i++){
+            output.push(i);
+        }
+        let randomInx = Math.floor(Math.random()*100);
+        console.log(output[randomInx]);
+
+        if((output[randomInx] % 3 == 0) &&(output[randomInx]== 0 ) ){
+            console.log("fizzBuzz");
+        } 
+        else if (output[randomInx] % 3 == 0) {
+            console.log("fizz");
+        }
+        else if (output[randomInx]== 0){
+            console.log("Buzz");
+        }
+        else{
+            console.log("went wrong ");
+        }
+
+    </script>
+</body>
+</html>

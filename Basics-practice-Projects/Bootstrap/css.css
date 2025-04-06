@@ -1,0 +1,313 @@
+/*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: linear-gradient(to right, #d9d9e7, #9bf3ede3);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+header{
+    width: 100%;
+    display: flex;
+    
+}
+#toplogos{
+    background-color: rgba(222, 231, 233, 0.5);
+    width: 50%;
+    
+}
+#allapp{
+    width: 50%;
+   
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+#logo{
+    height: 130px;
+    width: auto;
+}
+#textlogo{
+    height: 100px;
+    width: auto;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+}
+#abtservice{
+    clear: both;
+
+}*/
+@font-face {
+    font-family: deepak;
+    src: url(https://fonts.googleapis.com/css?family=ABeeZee);
+  }
+  
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 480px;
+    background-image: linear-gradient(to right, #bbbbd1, #1e7a7448);
+    font-size: 18px;
+    font-family: deepak;
+  }
+  #toplogos{
+    background-color: #f7f8ffde;
+  }
+  
+  /*#logos{
+    background-image: linear-gradient(to rignt , black,white ,black);
+  } */
+  
+  
+  
+  #logo {
+    height: 55px;
+    width: auto;
+    float: left;
+  }
+  #textlogo{
+    height: 60px;
+    width: 340px;
+    margin-left: 15px;
+   
+  }
+  
+  img.service {
+    height: 250px;
+    width: 250px;
+    margin-left:110px;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+  
+  }
+  #blac{
+    background-color: black;
+    color: aliceblue;
+  }
+   nav{
+    background-color: rgba(0, 0, 0, 0.411)!important ;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+  
+  
+    
+   }
+  nav a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+  }
+  #products{
+    display:none;
+  }
+  
+  #abtservice{
+    
+    border-radius: 10px;
+    margin-top: 30px;
+    padding:10px;
+    text-indent: 30px;
+    text-align: justify;
+  }
+  
+  h1 {
+    border-left: 7px solid hsl(197, 56%, 50%)!important;
+    background-color: #ddffff!important;
+    color: black;
+    padding-left: 10px;
+    margin-bottom:-10px;
+    padding: 5px;
+    margin-left: 5px;
+  
+  
+  }
+  h2{
+    border-left: 7px solid  hsl(197, 56%, 50%)!important;
+    background-color: #ddffff!important;
+    color: black;
+    padding-left: 10px;
+    padding: 5px;
+    margin-left: 5px;
+  
+  }
+  h3{
+    border-left: 6px solid  hsl(310, 72%, 56%) ;
+    background-color: #dfb3dc;
+    padding: 7px;
+    display: inline-block;
+    margin-left: 20px; 
+  }
+  #services>div{
+    border: 3px ridge hsl(310, 72%, 56%);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    transition: border-radius 4s;
+  }
+  form{
+    font-size: 20px;
+    background-color: rgb(120, 152, 221);
+    border-radius: 15px;
+    overflow: hidden;
+    
+  }
+  legend{
+    border: 1px solid grey;
+    border-radius: 0 50%;
+    padding: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 5%;
+    font-weight: bold;
+    color: white;
+    background-color:rgba(255, 99, 71, 0.904);
+  }
+  label{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+  }
+  input{
+    height: 18px;
+  }
+  select{
+    height: 21px;
+  }
+  #upload{
+    display: inline-block;
+    margin-left: 50%;
+    margin-top:0px;
+  }
+  input[type=submit]{
+    height: 30px;
+    padding: 10px; 
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 99, 71, 0.904);
+    border-radius: 0 50%;
+    font-weight:bolder;
+    color: white;
+    float: right;
+    margin-top: 20px;
+    align-content:center;
+  }
+  /*#karthik{
+    border: 2px solid ; used for reference
+  }*/
+  #karthik img{
+    height: 180px;
+    border-radius: 50%;
+    margin-left: 10px ;
+    margin-right: 10px ;
+  
+  
+  }
+  #kartipic{
+    float: right;
+    margin-right: 10px ;
+    margin-top: 25px;
+  
+  }
+  #abtkarthik {
+  
+    background-color:rgba(0, 0, 0, 0.432);
+    color:white;
+    font-weight:normal;
+    font-family:arial ;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  #kartisicon{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 150%;
+    margin-bottom: 25px;
+    text-shadow: 5px black;
+   /* background-image: linear-gradient(to right ,pink, green,blue,blue,red ); */
+  
+  }
+  
+  /*#deepak{
+    border: 1px solid black;
+    
+  
+  }
+  */
+  #deepak img{
+    height: 170px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    float:left;
+  
+  }
+  #deepakbox{
+   /* background-color:#e7e7e79d;*/
+   background-color:rgba(7, 26, 66, 0.678);
+   color: white;
+    padding: 20px 2px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px black;
+    
+    
+  
+  
+  
+  }
+  #deepakbox p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:justify;
+    margin-right: 10px;
+    margin-top: 15px;
+    
+  }
+  #deepak a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.678);
+  }
+  
+  h4{
+    border-left: 6px solid blue;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 5px;
+    background-image: linear-gradient(to right, #d9d9e7, #9bf3ede3);
+    display: inline-block;
+  }
+  #deepaksicon{
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.089), white, rgba(255, 255, 255, 0.13));
+    font-size: 25px;
+  
+    
+  }
+  footer{
+    display: block;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }

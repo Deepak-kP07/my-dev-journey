@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+img{
+    width: 300px;
+    height: auto;
+
+}
+p {
+    text-indent: 50px;
+    line-height: 1.5;
+    padding: 5px;
+}
+.box{
+    background-color: #212121;
+    padding: 10px;
+    margin: 20px auto;
+}
+#img-text{
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 800;
+    color: blue;
+    text-decoration: wavy 2px solid blue ;
+}
+.img-container{
+    display: flex;
+    flex-direction: row-reverse;
+    text-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.img{
+    margin-left: 100px;
+}

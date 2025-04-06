@@ -1,0 +1,50 @@
+body{
+    background-image: url(PICS/WD_bg.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box{
+    margin-top: 10%;
+}
+#left{
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.5;
+
+}
+#text{
+    color: white;
+    font-size: 19px;
+    text-align: left;
+}
+
+button{
+    background-color: rgb(50, 112, 192);
+    color: black;
+    border: 4px 4px white;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    top: 80px;
+    left: 200px;
+    /* box-shadow: 2px 2px 10px 3px  white; */
+    /* padding-left: 20px;
+    padding-right: 20px;    leart from delta   */
+    padding: 5px 20px;
+} 
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+img{
+ border-radius: 35px;   
+ box-shadow: 3px 3px 26px 8px  white;
+ /* margin-right: 10px; */
+ 
+}
+/* #right{
+ background-image: url(PICS/WD_img.jpg);
+
+} */

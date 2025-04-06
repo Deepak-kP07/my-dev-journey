@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid temlate area </title>
+    <style>
+        .container{
+            height: 700px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 30px 500px 30px;
+            grid-template-columns:200px 400px ;
+            grid-template-areas: 
+            "hd hd"
+            "sb mc"
+            "ft ft"
+            ;
+
+        }
+        .box {
+            border: 1px solid blue ;
+            background-color: yellow;
+
+        }
+        .box1{
+            grid-area:hd;
+        }
+        .box2{
+            grid-area:sb ;
+        }
+        .box3{
+            grid-area:mc;
+        }
+        .box4{
+            grid-area:ft;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="box1 box "> main</div>
+            <div class="box2 box ">side bar</div>
+            <div class="box3 box "> main</div>
+            <div class="box4 box "> footer</div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

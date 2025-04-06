@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexBox</title>
+    <style>
+        h1{
+            font-size: 9em;
+            text-align: center;
+        }
+        #container{
+            width: 80%;
+            height: 1100px;
+            background-color: bisque;
+            margin: 10px auto;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /* justify-content: space-around; */
+            justify-content:space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            /* justify-content: flex-start; */
+            /* flex-wrap: wrap-reverse; */
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            align-items:center;
+            /* align-content:space-around; */
+            align-self:flex-end;
+            /* flex:  2 3 200px ; */
+
+
+        }
+        #container div{
+            width: 650px ;
+            height: 100px;
+           
+        }
+        #container :nth-child(1){
+            background-color: aqua;
+            
+        }
+        #container :nth-child(2){
+            background-color: rgb(38, 255, 0);
+            /* flex-shrink: 3 ; */
+            
+        }
+        #container :nth-child(3){
+            background-color: rgb(17, 0, 255);
+            /* flex-shrink: 1; */
+        }
+        #container :nth-child(4){
+            background-color: rgb(255, 0, 140);
+            /* flex-grow:1; */
+        }
+        #container :nth-child(5){
+            background-color: rgb(255, 0, 0);
+            
+        }
+        #container :nth-child(6){
+            background-color: rgb(255, 191, 0);
+            
+        }
+        #container :nth-child(7){
+            background-color: rgb(255, 242, 0);
+            
+        }
+        #container :nth-child(8){
+            background-color: rgb(131, 81, 115);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1> flexBox </h1>
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+:root {
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+
+#wrapper{
+    width:100vw;
+    height:100vh;
+    color: var(--colorLight2);
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.tab-container{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.tab.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.main-contaner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-block:4rem;
+}
+.btn{
+    all:unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    background-color:var(--colorDark2);
+    border-radius: 4px;
+    padding: 10px 33px ;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.grant-location-container {
+    display: none;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.grant-location-container.active{
+    display:flex;
+}
+.grant-location-container h3 {
+    font-size: 1.5rem;
+    padding: 3px;
+}
+.grant-location-container p {
+    font-size: small;
+    padding: 3px;
+}
+/* loading page  */
+.loading-page{
+    display: none;
+    text-align: center;
+}
+.loading-page.active{
+    display: flex;
+}
+.loading-page p {
+    text-transform: uppercase;
+}
+
+/* user weather info  */
+.user-info-container {
+    display: none;
+}
+.user-info-container.active {
+    display: flex;
+}
+
+.user-info-container .name {
+    display: flex;
+    align-items: center;
+    padding:  0px 10px;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.user-info-container .name img { 
+    height: 25px; 
+    width: auto;
+    margin-left: 10px;
+    object-fit: contain;
+}
+
+.user-info-container p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.user-info-container img{
+    height: 90px;
+}
+
+.user-info-container h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.parameters-container {
+    max-width: 550px;
+    display: flex;
+    padding: 10px;
+    width: 90%;
+    justify-content: space-around;
+}
+.parameter{
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    background-color:  rgba(219, 226, 239, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 4px;
+}
+.parameter img {
+    width: 50px;
+    height: auto;
+}
+
+.form-container{
+    display: none;
+    width:90%;
+    max-width:550px;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px; 
+    margin-bottom: 2rem;
+}
+
+.form-container.active{
+    display: flex;
+}
+
+.form-container input{
+    all:unset;
+    width: calc(100% - 80px);
+    height:40px;
+    padding: 0 20px;
+    background-color:rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+}
+
+.form-container input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-container input:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container .btn {
+    padding:unset;
+    background: transparent;
+    background-color: var(--colorDark2);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-bottom:1px;
+}

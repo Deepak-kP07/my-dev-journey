@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/e5cad3fd8f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper" class="bg-[#324152] w-[1380px] h-[700px]  flex-cols items-center pt-70 ">
+        <div class="container border  w-[270px] p-4  text-center mx-auto flex-cols ">
+            <div class="heading p-4 text-sky-500 font-bold capitalize">
+                <h1> increment and decrement </h1>
+            </div>
+            <div class="flex place-content-evenly  bg-white p-3">
+                <div class="minus border-r-2 p-3 " onclick="decrement()"> <i class="fa-solid fa-minus "></i></div>
+                <div class="num p-3 px-4"> 0 </div>
+                <div class="plus border-l-2 p-3  " onclick="increment()"><i class="fa-solid fa-plus "></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="counterDOM.js"></script>
+    
+</body>
+</html>

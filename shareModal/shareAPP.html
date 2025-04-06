@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareAPP</title>
+    <script src="https://kit.fontawesome.com/e5cad3fd8f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        .modal{
+            scale: 0;
+        }
+        .active{
+            scale:1;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            z-index: 100;
+            background-color: #00000088;
+        }
+
+        .blur-bg{
+            filter: blur(3px);
+        }
+
+
+        .blue-babble{
+            animation: blue-ball 15s linear 1s infinite;
+        }
+        @keyframes blue-ball {
+            0%{
+                left: 55%;
+                transform: translateY(0);
+            }
+            50%{
+                left:50%;
+                transform: translateY(-20px);
+            }
+        }
+        .orange-babble{
+            animation: orange-ball 15s linear 1s infinite;
+        }
+        @keyframes orange-ball {
+            0%{
+                left: 30% ;
+                transform: translateY(0);
+                }
+            0%{
+                left:35% ; 
+                transform: translateY(30px);
+            }
+        }
+
+
+    </style>
+</head>
+<body class="bg-black text-white"> 
+    
+    <div id="wrapper w-[100vh]"  >
+        <div class="main m-2">
+                <div class="orange-babble  w-[150px] h-[150px] rounded-full bg-orange-500 absolute left-[30%] top-[40px] -z-10 drop-shadow-[0px_0px_20px_orange]">  </div>
+                <div class=" min-w-[300px] card border p-10 space-y-7 flex flex-col justify-center items-center w-[370px] mx-auto mt-40  bg-[#ffffff30] rounded-xl ">
+                <div class="">
+                    <img src="../Portfolio/images/userAsset/WhatsApp Image 2024-12-06 at 23.32.31_6c62872f.jpg" alt="" width="130px" class="rounded-full " >
+                </div>
+                <h1 class="text-[30px] font-bold ">Deepak KP</h1>
+                <h2 class="text-gray-500 font-bold"> founder , myfeature Business</h2>
+                <div class="flex  flex-col md:flex-row gap-10">
+                    <div class=" share-btn border p-2 rounded-sm transition-all duration-200 hover:bg-white hover:text-black " onclick="openModol()">
+                        <i class="fa-solid fa-rocket " ></i> 
+                        Share my profile 
+                    </div>
+                    <div class=" border p-2 rounded-sm  transition-all duration-200 hover:bg-white hover:text-black  text-center ">
+                        Follow Me
+                    </div>
+                </div>
+                </div>
+                <div class=" blue-babble bg-blue-500 w-[200px] h-[200px] rounded-full absolute left-[55%] -z-10 -bottom-[15%] drop-shadow-[0px_0px_20px_blue]">
+
+                </div>
+        </div>
+
+        <!-- modol component -->
+        <div class="modal w-[500px] min-w[300px]  bg-[#0000088] p-7 border rounded-2xl border-gray-500">
+            <div class="modal-header flex justify-between border-b-1 border-gray-500 pb-2">
+                <div class=" heading text-[25px] font-bold">  Share my Profile </div>
+                <div class="close-btn" onclick="closeModal()"> <i class="fa-solid fa-xmark"></i> </div>
+            </div>
+            <h3 class="text-xl p-2 pt-5">share via </h3>
+            <div class="icon-container flex text-[33px] gap-12 justify-center pt-8 sm:flex-wrap ">
+                
+                <a href="#"> <i class="fa-brands fa-instagram border rounded-full border-pink-500 p-2"></i> </a>
+                <a href="#"> <i class="fa-brands fa-facebook border rounded-full border-blue-500 p-2"></i> </a>
+                <a href="#"> <i class="fa-brands fa-whatsapp border rounded-full border-green-500 p-2"></i> </a>
+                <a href="#"> <i class="fa-regular fa-envelope border rounded-full border-red-500 p-2"></i> </a>
+                <a href="#"> <i class="fa-brands fa-twitter border rounded-full border-gray-500 p-2"></i> </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        let modal_box = document.querySelector(".modal");
+        let bg = document.querySelector(".main");
+
+        let share = document.querySelector(".share-btn"); 
+        share.addEventListener("click" , ()=>{
+            modal_box.classList.add("active");
+            bg.classList.add("blur-bg");
+        });
+        
+        let dismiss = document.querySelector(".close-btn");
+        dismiss.addEventListener("click" , ()=>{
+            modal_box.classList.remove("active");
+            bg.classList.remove("blur-bg");
+        })
+    </script>
+</body>
+</html>

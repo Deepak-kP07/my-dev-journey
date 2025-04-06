@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New grid t</title>
+    <style>
+        .container{
+            height: 700px;
+            background-color: rgb(120, 182, 162);
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: repeat(4 , 1fr);
+            grid-template-columns:repeat(4, 1fr) ;
+             grid-template-areas: 
+             " hd hd hd hd"
+             "ls mc mc rs"
+             "ls mc mc rs" 
+             "ft ft ft ft";
+
+        }
+        .div1{
+            grid-area: hd;
+        }
+        .div2{
+            grid-area: ls;
+        }
+        .div3{
+            grid-area: mc;
+        }
+        .div4{
+            grid-area: rs;
+        }
+        .div5{
+            grid-area: ft;
+        }
+        
+        .box{
+            border: 1px solid blue;
+            background-color: blueviolet;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="container">
+           
+                <div class="div1 box "> header</div>
+                <div class="div2 box "> left side </div>
+                <div class="div3 box "> main content </div>
+                <div class="div4 box "> right  side</div>
+                <div class="div5 box "> footer </div>
+        </div>
+</body>
+</html>

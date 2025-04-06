@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            border: 2px solid black;
+            height: auto;
+            width: 800px;
+            box-shadow: 2px 4px 10px gold;
+            margin: 10px auto ;
+            background-color: aqua;
+            opacity: 0.7;
+        }
+        .cls{
+            width: 500px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 25px;
+            margin: 300px auto;
+            transition: 2s ;
+            /* transform: rotate(35deg); */
+        }
+
+        div :nth-child(1){
+            background-color:rgb(94, 48, 139);
+            transform: rotate(35deg);
+            /* transform: scalex(40 deg); */
+            /* transition:  2s ease-in 1s; */
+        }
+        div :nth-child(2){
+            background-color:rgb(51, 153, 70);
+           
+          
+            
+        }
+        div :nth-child(2):hover{
+            transform: scale(2);
+        }
+        div :nth-child(3){
+            background-color:rgb(75, 51, 153);
+            /* transform: translate(200px 200px); */
+            translate: 100px 100px;
+        }
+        div :nth-child(4){
+            background-color:rgb(153, 51, 119);
+            transform: skew(80 deg);
+        }
+        div :nth-child(5){
+            background-color:rgb(120, 127, 22);
+            transform: skew(40 deg);
+        }
+        #box1{
+            transform: rotate(40 deg);
+
+        } 
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="cls" id="box1"></div>
+        <div class="cls"> </div>
+        <div class="cls"></div>
+        <div class="cls"></div>
+        <div class="cls"></div>
+    </div>
+</body>
+</html>

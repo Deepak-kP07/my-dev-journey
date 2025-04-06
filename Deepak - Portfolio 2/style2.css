@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    text-align: center;
+    color: #40514e;
+}
+.top-container{
+    padding-top: 70px;
+    background-color: #e0ebe8;
+    position: relative;
+
+}
+.top-cloud{
+    position: relative;
+    left: 25%;
+    height: 50px;
+    width: auto;
+}
+.bottom-cloud{
+    position: relative;
+    bottom: 250px;
+    height: 50px;
+    width: auto;
+}
+
+
+h1 {
+    color:  #45b29a;
+    padding:  50px  ;
+    font-size: 5rem;
+    font-family: "Sacramento", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.top-container p {
+    color:  #45b29a;
+    font-size: 2rem ;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -45px !important;
+    margin-bottom: 15px ;
+}
+h2{
+    color:  #45b29a;
+    font-size: 2rem ;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal ;
+    font-style: normal;
+}
+h3{
+    color:  #45b29a;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 30px auto !important ;
+
+    /* font-size: 2.5rem; */
+    /* color: #1e836c; */
+    /* padding-bottom: 10px; */
+}
+h4{
+    line-height: 2;
+    /* padding : 15px auto ;
+    margin: 20px auto ; */
+}
+.skills {
+    margin-top: 6%;
+}
+.skill-row{
+    width:50%;
+    margin: 50px auto 50px auto ;
+    
+
+}
+.skill-row img {
+     width: 25%;
+     border-radius: 50%;
+}
+.skill-row p {
+    text-align: left;
+    line-height: 2;
+    /* font-size: 20px; */
+    padding: 10px;
+    margin-top: 10px;
+}
+.skill1-img{
+    float: left;
+    margin-right: 30px;
+}
+.skill2-img{
+    float: right;
+    margin-left: 30px;
+}
+.text{
+    margin-top: 100px;
+}
+.profile{
+    padding: 10px;
+    margin-top: 6%;
+
+}
+.dp-img {
+    width: 17%;
+    border-radius: 50%;
+}
+.profile .bio {
+    width: 65%;
+    margin: 0 auto;
+    
+}
+.profile a {
+    text-decoration: none;
+    color: inherit;
+}
+.education{
+    padding: 10px;
+    margin-top: 6%;
+}
+.edu-img {
+    width: 10%;
+    border-radius: 50%;
+}
+.education .edu-details{
+    width: 65%;
+    margin: 0 auto;
+    
+}
+.contact {
+    margin-top: 6%;
+    /* margin: 0 auto; */
+}
+
+p{
+    line-height: 2;
+    font-weight:bold;
+    /* text-indent: 20px; */
+}
+hr{
+    border: dotted gray;
+    width : 4% ;
+    border-bottom: none;
+    margin: 20px auto;
+    
+}
+.social-icons{
+    margin-top: 30px;
+    margin-left: 25px px;
+    /* display: flex;
+    justify-content: space-around; */
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.759), rgba(255, 255, 255, 0.13));
+    font-size: 25px;        
+}
+.social-icons a {
+    margin-right: 17px ;
+    padding : 15px auto ;
+    color:rgba(0, 0, 0, 0.49);
+}
+.contact p {
+     width:  65% ;
+     margin: 20px auto ;
+}
+ .contact a {
+    padding : 10px 20px ;
+    background-color: #15ecbde6;
+    color:black;
+    /* font-weight: bold; */
+    /* font-size: 20px; */
+    border-radius: 25px;
+    text-decoration: none !important;
+    font-family: "Arial ", Helvetica, sans-serif ;  
+    font-weight: bold ;
+    margin-top: 30px !important;
+
+}
+.mail {
+    margin: 30px auto ;
+}
+
+a:hover{
+    background-color: aquamarine;
+}
+.bottom-container{
+    background-color:  #45b29a ;
+    margin-top: 6%;
+    line-height: 2;
+    text-align: center;
+}

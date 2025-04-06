@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gride concepts</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #wrapper{
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .container{
+            background-color: azure;
+            width: 95%;
+            margin: 0 auto ;
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: 10% 40% 40% 10%;
+                  }
+        .box{
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 0.8rem;
+        }
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-image: linear-gradient(to bottom, rgb(82, 241, 82), gray)  ;
+         
+        }
+        .gfg{
+            text-align: center;
+            font-size: 13px;
+            font-variant: small-caps;
+            position: relative; 
+            left: 48%;      
+         }
+        .box2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+          background-image: linear-gradient(to right, rgb(82, 241, 82), gray)  ;
+          
+        }
+        .box3{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            overflow-y:visible;
+            background-image: linear-gradient(to right, gray, rgb(82, 241, 82),gray)  ;
+          
+        }
+        .box4{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-image: linear-gradient(to right, gray, rgb(82, 241, 82))  ;
+          
+        }
+        .box5{
+            grid-column-start: 1;
+            grid-column-end: 5;
+           background-color:  rgb(82, 241, 82);
+           text-align: center;
+        }
+        .menu{
+            text-decoration: none;
+            margin-left: 2.5rem;
+            font-size: 1.2rem;
+            font-weight:bold;
+            margin-top: 60px;
+        }
+        img{
+            width: 200px;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 50%;
+           position: relative;
+           left: 35%;
+           top: 40px;
+           margin-bottom: 50px;
+
+        }
+        ul > li{
+            list-style-type:none ;
+            padding: 0.5rem;
+            margin-top: 25px;
+            text-decoration: none;
+            
+        }
+        ol > li{
+            list-style-type:none ;
+            padding: 5px;
+            text-align: center;
+            font-weight:bold;
+            font-variant: small-caps;
+        }
+
+       .box h2,h3 {
+        text-align: center;
+       } 
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="box1 box">
+                <h2> Geeks for Geeks </h2>
+                <small class="gfg"> --GFG--</small>
+            </div>
+            <div class="box2 box">
+                <h3> side menu </h3>
+                <ul class="menu">
+                <li><a href=""> HOME</a></li>
+                <li><a href=""> COURSES</a></li>
+                <li><a href=""> CLASSES</a></li>
+                <li><a href=""> ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+
+            </ul>
+            </div>
+            <div class="box3 box"> 
+                <h3>main content </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iste voluptate soluta doloribus veniam voluptatibus alias sed, saepe molestiae doloremque consequuntur dignissimos nam, culpa corporis quam debitis architecto minima accusantium.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iste voluptate soluta doloribus veniam voluptatibus alias sed, saepe molestiae doloremque consequuntur dignissimos nam, culpa corporis quam debitis architecto minima accusantium.</p>
+                 <br>
+                 <img src="..//assets/1722225662884.jpeg" alt="mee">
+                 <ol>
+                    <li>one </li>
+                    <li>tow</li>
+                    <li>three</li>
+                    <li>four</li>
+                    <li>five</li>
+                 </ol>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iste voluptate soluta doloribus veniam voluptatibus alias sed, saepe molestiae doloremque consequuntur dignissimos nam, culpa corporis quam debitis architecto minima accusantium.</p>
+                
+            </div>
+            <div class="box4 box">
+                 <h3>sidebar right</h3>
+                <h5>it can be anything here </h5>
+                <iframe   src="https://www.youtube.com/embed/Vi9bxu-M-ag?si=mhs3F7j8pXp4tMcO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            <div class="box5 box"> 
+                <h3>footer</h3>
+                <p> all rights are reserved &copy 2025</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

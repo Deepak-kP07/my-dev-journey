@@ -1,0 +1,1 @@
+This folder contains only the src directory. Once you set up the React environment, you can use the components inside it. I practiced this as part of the CodeHelp Web Development course

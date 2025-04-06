@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this web site is about practicing frontend developent">
+    <meta name="author" content="DEEpak kP">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aquamarine;
+        }
+        hr{
+            border: none;
+            border-top: 3px double blue;
+            overflow: visible;
+            text-align: center;
+            height: 30px;
+        }
+        hr::after{
+            background:aquamarine;
+            content: '*';
+            padding: 0 4px;
+            position:relative;
+            top: -9px;
+            size: 30px;
+        }
+        img{
+            width: 300px;
+            height: auto;
+            border: 5px groove red;
+            text-align:  center;
+        }
+        marquee{
+            height: 60px;
+            /* width: 50%; */
+            text-align: center;
+            direction:left;
+            scroll-behavior: smooth;
+        
+        }
+        tr , th , td {
+            border-collapse: collapse;
+            padding: 10px;
+            vertical-align: bottom;
+        
+
+        }
+        /* tbody{
+            border: 4px;
+        } */
+        table{
+            border: 2px ;
+            border-collapse: collapse;
+            border-radius: 25px;
+
+        }
+        table  tbody tr:nth-child(even){
+           background-color: blueviolet;
+        }
+    </style>
+</head>
+
+=<body>
+    <marquee behavior="" ><h1>practing full stack </h1></marquee>
+    <p>getting deatils to mail  which user gives in form </p>
+    <form action="mailto:deepakperumal09@gmail.com" method="post" enctype="text/plain" >
+        <label for="name">  Enter ur Name : </label>
+        <input type="text" id="name" name="yourname" noshade >
+        <label for="mail"> Enter ur mail ID : </label>
+        <input type="email" name="email" id="mail">
+        <input type="submit" value="submit" noshade >
+    </form>
+    <br>
+    <hr>
+    <a href="../book_store/index.html" target="myframe"> link </a>
+    <hr><br>
+    <frameset cols="2">
+    <iframe src="frames.html" frameborder="2px" name="myframe"></iframe>
+    <iframe src="frames.html" frameborder="2px" name="yourframe"></iframe>
+    </frameset>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Corrupti vero assumenda, et in at unde esse commodi ab 
+         voluptates officia officiis veniam magni rem accusantium
+          sequi fugiat. Velit, eos nisi!
+    </p>
+    <hr noshade="noshade">
+    <pre>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Consequuntur        dolorum mollitia nemo, quas atque cupiditate
+          error dolor voluptatibus culpa. Placeat laboriosam velit labore 
+        maxime voluptatem sit ducimus ea, modi possimus.
+
+
+             i just used pre tag ere used to write preformatted text
+    </pre>
+
+    <hr>
+    <b>Deepak KP</b>
+    <i>Deepak KP</i> <br>
+    <u>Deepak KP</u>
+    <ins>Deepak KP</ins> <br>
+    <!-- <ins></ins> -->
+    <s>Deepak KP</s> 
+    <del>Deepak KP</del>
+    <strike>Deepak KP</strike>
+    <big>Deepak KP</big>
+    <tt>deepakperumal09</tt>
+    <hr>
+    <hr>
+    <kbd>
+        ctrl + shift + s 
+        ctrl+ n 
+    </kbd>
+    <code>
+        <p> deepakperumal09</p>
+    </code>
+    <abbr title="KRISHNAN PERUMAL DEEPAK"> KPD</abbr>
+
+    <img src="pics/Screenshot (13).png" alt="img" >
+    <a href="mailto:deepakperumal04@gmail.com">mail me </a>
+<table border="2px">
+    <caption>
+        practicing table 
+    </caption>
+    <colgroup>
+        <col span="2" bgcolor="blue">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>
+                s.no
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                class
+            </th>
+            <th>
+                phone no
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Deepak</td>
+            <td>cse 1B</td>
+            <td>7075898604</td>
+        </tr>
+    </tbody>
+</table>
+    <tfoot>
+        <th colspan="2">total</th>
+        <th colspan="2"> data </th>
+    </tfoot>
+
+
+
+    <p> heyy i'm  <abbr title=" Krishnan perumal">KP</abbr>Deepak </p>
+    <p>
+        <dfn id="html"><abbr title="HyperText Markup Language">HTML</abbr> </dfn> is a
+        markup language used to create the semantics and structure of a web page.
+    </p>
+
+    <audio src=""></audio>
+    <ul>
+        <li>
+            <bdi dir="ltr"> Deepak</bdi>
+        </li>
+        <li> 
+            <span dir="ltr"> deepak </span>
+        </li>
+        <li>
+            <span dir="rtl"> deepak </span>
+        </li>
+        <li></li>
+    </ul>
+
+    <p>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quod id aut alias tempore dolorum nisi ab vitae sed architecto esse praesentium expedita est, totam ipsum itaque adipisci. Quasi, eum.
+        </blockquote>
+    </p>
+
+
+    <div>
+        <ul>
+            <li><b> deepak :bold </b></li>
+            <li><strong>Deepak : strong</strong></li>
+            <li> <i> Deepak : italiq  </i></li>
+            <li> <em>Deepak : emphize </em></li>
+            <li><del>Deepak : delete</del></li>
+            <li><ins>Deepak : insert </ins></li>
+            <li><mark> Deepak : mark </mark></li>
+            <li> <sub> KP </sub> KP <sup>KP</sup> </li>
+            <li><marquee behavior="" direction=""> DEEPAK</marquee></li>
+            <li><strike> DEEpak : strike</strike></li>
+        </ul>
+    </div>
+</body>
+</html>

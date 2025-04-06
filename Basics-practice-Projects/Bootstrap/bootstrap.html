@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap practice </title>
+    <script
+      src="https://kit.fontawesome.com/e5cad3fd8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg  navbar-light fixed-top bg-body-secondary">
+        <a class="navbar-brand" href="#">
+            <img src="pics/Screenshot (13).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+        <ul  class="navbar-nav ml-auto " >
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> home </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">  services </a>
+               
+            </li>
+            <li>
+                <a href="#" class="nav-link">about </a>
+                
+            </li>
+            <li>
+                <a href="#" class="nav-link">   feedback </a>
+              
+            </li>
+            <li>
+                <a href="#" class="nav-link">  contact</a>
+               
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                    dropdown
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="" class="dropdown-item"> item1 </a>
+                        <a href="" class="dropdown-item"> item 2</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+        </ul>
+    </div>
+    </nav> -->
+
+    <!-- <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a  class="nav-link" href="#" > Home </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> Home </a>
+            </li>
+        </ul>
+    </nav> -->
+    <!-- <a href="">home </a> -->
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> Practicing bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-2  col-md-3   colour-box">
+            6
+        </div>
+        <div class="col-lg-2  col-md-3  col-sm-12 colour-box">
+            1
+        </div>
+        <div class="col-lg-2  col-md-3   colour-box">
+            2
+        </div>
+        <div class="col-lg-2  col-md-3  col-sm-12 colour-box">
+            3
+        </div>
+        <div class="col-lg-2  col-md-3   colour-box">
+            4
+        </div>
+        <div class="col-lg-2  col-md-3   colour-box">
+            5
+        </div>
+        <div class="col-lg-2  col-md-3   colour-box">
+            6
+        </div>
+      </div>
+
+                              <!-- "carousel slide" -->
+      <div id="practiceExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+          </div>
+          <div class="carousel-item active">
+
+          </div>
+          <div class="carousel-item active">
+
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#practiceExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#practiceExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex voluptatem, illum delectus nostrum quasi modi 
+        eveniet repellendus perspiciatis, libero saepe corrupti, quidem ratione vero error laboriosam! Excepturi, nobis placeat.</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-envelope"></i>
+
+
+
+
+
+
+
+
+
+
+        <hr>
+        
+</body>
+</html>
