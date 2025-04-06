@@ -1,0 +1,1 @@
+A collection of all the projects and practice code I've built during my web development learning journey. From basic HTML to full-stack experiments – this repo documents my growth as a developer.
