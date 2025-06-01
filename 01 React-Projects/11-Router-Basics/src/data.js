@@ -1,0 +1,28 @@
+// Dummy Products Data (25 items)
+export  const PRODUCTS = [
+  { id: 'p1', title: 'Wireless Bluetooth Headphones', desc: 'High-quality sound with noise cancellation and 30hr battery life', price: 89.99 },
+  { id: 'p2', title: 'Smart Fitness Watch', desc: 'Track your health, fitness goals, and receive notifications', price: 199.99 },
+  { id: 'p3', title: 'Portable Phone Charger', desc: '10000mAh power bank with fast charging and multiple ports', price: 29.99 },
+  { id: 'p4', title: 'Mechanical Gaming Keyboard', desc: 'RGB backlit mechanical keyboard with blue switches', price: 129.99 },
+  { id: 'p5', title: 'Wireless Gaming Mouse', desc: 'Ergonomic design with 6 programmable buttons and LED lighting', price: 59.99 },
+  { id: 'p6', title: '4K Webcam', desc: 'Ultra HD webcam with auto-focus and built-in microphone', price: 79.99 },
+  { id: 'p7', title: 'Laptop Stand Adjustable', desc: 'Aluminum laptop stand with heat dissipation and ergonomic design', price: 39.99 },
+  { id: 'p8', title: 'USB-C Hub Multiport', desc: '7-in-1 hub with HDMI, USB 3.0, and SD card reader', price: 49.99 },
+  { id: 'p9', title: 'Wireless Charging Pad', desc: 'Fast wireless charger compatible with all Qi-enabled devices', price: 24.99 },
+  { id: 'p10', title: 'Bluetooth Speaker Portable', desc: 'Waterproof speaker with 360-degree sound and 12hr battery', price: 69.99 },
+  { id: 'p11', title: 'Smart LED Light Bulbs', desc: 'Color changing WiFi bulbs controllable via smartphone app', price: 34.99 },
+  { id: 'p12', title: 'Wireless Earbuds Pro', desc: 'Active noise cancellation with premium sound quality', price: 149.99 },
+  { id: 'p13', title: 'Phone Camera Lens Kit', desc: 'Professional lens attachments for smartphone photography', price: 44.99 },
+  { id: 'p14', title: 'Desk Organizer Bamboo', desc: 'Eco-friendly organizer with multiple compartments', price: 19.99 },
+  { id: 'p15', title: 'Smart Home Security Camera', desc: '1080p HD camera with night vision and motion detection', price: 89.99 },
+  { id: 'p16', title: 'Ergonomic Office Chair', desc: 'Lumbar support chair with adjustable height and armrests', price: 299.99 },
+  { id: 'p17', title: 'Gaming Headset RGB', desc: 'Surround sound headset with retractable microphone', price: 79.99 },
+  { id: 'p18', title: 'Tablet Stand Foldable', desc: 'Adjustable stand compatible with tablets and smartphones', price: 16.99 },
+  { id: 'p19', title: 'Car Phone Mount Magnetic', desc: 'Strong magnetic mount with 360-degree rotation', price: 22.99 },
+  { id: 'p20', title: 'Portable SSD Drive 1TB', desc: 'Ultra-fast external storage with USB 3.1 connectivity', price: 119.99 },
+  { id: 'p21', title: 'Smart Thermostat WiFi', desc: 'Energy-saving thermostat with app control and scheduling', price: 179.99 },
+  { id: 'p22', title: 'Wireless Keyboard Mouse Combo', desc: 'Ultra-thin keyboard and mouse set with long battery life', price: 54.99 },
+  { id: 'p23', title: 'Phone Screen Protector', desc: 'Tempered glass protector with bubble-free installation', price: 12.99 },
+  { id: 'p24', title: 'USB Flash Drive 128GB', desc: 'High-speed USB 3.0 drive with compact metal design', price: 18.99 },
+  { id: 'p25', title: 'Smart Door Lock', desc: 'Keyless entry with fingerprint and app control', price: 249.99 }
+];
