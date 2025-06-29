@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{docTitle}
+    body
+        header
+            nav
+                ul
+                    li: a(href="/") shop
+                    li: a(href="/admin/add-product") add product
+                    li: a(href="/cart") Cart
+                    li: a(href="/checkout") Checkout
+        div 
+            h1 Shop
+            p Welcome to the shop!
+            h2 #{prods.title}
+     
